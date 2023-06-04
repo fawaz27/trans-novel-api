@@ -119,7 +119,7 @@ export class AuthentificationService{
             maxAge: 3600,
             secure: true,
             httpOnly: true,
-            sameSite: 'lax'
+            sameSite: 'none'
         }
         return options;
     }
