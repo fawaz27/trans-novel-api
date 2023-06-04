@@ -117,7 +117,7 @@ export class AuthentificationService{
     {
         const options :CookieOptions = {
             maxAge: 3600,
-            secure: true,
+            // secure: true,
             httpOnly: true,
             sameSite: 'none'
         }
