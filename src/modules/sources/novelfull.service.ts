@@ -191,9 +191,13 @@ export class NovelFullService implements SourcesService{
             novels = await this.matchOthersParams(novels);
             novelsList.novels = novels;
             novelsList.last_page = Number($('li.last a').attr('data-page')) +1 ;
+            
             if(Number.isNaN(novelsList.last_page))   
                 novelsList.last_page = Number($('li.active a').last().attr('data-page')) +1 ;
-
+            
+            if(Number.isNaN(novelsList.last_page))   
+                novelsList.last_page = 1 ;
+                
             return novelsList;
         } catch (error) {
             return novelsList;
