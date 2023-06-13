@@ -27,6 +27,8 @@ class App {
 
     this.app.listen( Number(port)  ,hostname, () => {
       console.log(`Example app listening at http://${hostname}:${port}`);
+      console.log('OK');
+      
     })
   }
 
@@ -37,7 +39,7 @@ class App {
     public get()
     {
         this.app.get('/', (request, response) => {
-            response.send('Le serveur est bien configuré, bravo!!');
+            response.send('Ok.Le serveur est bien configuré, bravo!!');
         })
     }
     private initializeMiddlewares()
