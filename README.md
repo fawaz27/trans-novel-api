@@ -37,6 +37,13 @@ Bienvenue dans le projet trans-novel-api ! Ce projet a pour objectif de fournir 
    ```http
    http://localhost:3000
    ```
+## Déploiement
+
+Vous pouvez accéder à l'API déployée à l'adresse suivante :
+
+[transnovel-api.vercel Deployment](https://transnovel-api.vercel.app)
+
+Assurez-vous de mettre à jour ce lien avec l'URL réelle de votre déploiement.
 
 ## Configuration
 
