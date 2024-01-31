@@ -11,18 +11,18 @@ import { NovelController } from './modules/novel/novel.controller';
 (async () => {
 
 
-    try {
-      await AppDataSource.initialize();
-    } catch (error) {
-      console.log('Error while connecting to the database', error);
-      return error;
-    }
+    // try {
+    //   await AppDataSource.initialize();
+    // } catch (error) {
+    //   console.log('Error while connecting to the database', error);
+    //   return error;
+    // }
     
     const app = new App([
-      new AuthentificationController(),
-      new EmailConfirmationController(),
-      new ResetPasswordController(),
-      new SourceController(),
+      // new AuthentificationController(),
+      // new EmailConfirmationController(),
+      // new ResetPasswordController(),
+      // new SourceController(),
       new NovelController()
     ]);
     
